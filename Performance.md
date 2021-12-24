@@ -1,14 +1,14 @@
-# Perfomance
+# Performance
 
 [к оглавлению](./README.md)
 
 ## Содержание
 
-- [UI Perfomance](./Perfomance.md#ui-perfomance)
-- [App Perfomance](./Perfomance.md#app-perfomance)
-- [Core (language)](./Perfomance.md#core-language)
+- [UI Performance](./Performance.md#ui-performance)
+- [App Performance](./Performance.md#app-performance)
+- [Core (language)](./Performance.md#core-language)
 
-## <a id="ui-perfomance)"></a> UI Perfomance
+## <a id="ui-performance)"></a> UI Performance
 
 ## Qualified:
 ### 1. Understands how to build a layout with and without auto layout
@@ -34,7 +34,7 @@
 ### 1. Knows how to profile performance issues
     * ?
 
-## <a id="app-perfomance)"></a> App Perfomance
+## <a id="app-performance)"></a> App Performance
 
 ## Qualified:
 ### 1. Knows concurrency basics (GCD queues, async/sync, groups)
