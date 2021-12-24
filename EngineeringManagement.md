@@ -1,27 +1,13 @@
-### Process planning
+# Engineering Management
 
-The software development process, software development activities
-	* 
+[к оглавлению](./README.md)
 
-Basic of SDLC models: waterfall concept, agile software development concept
-	* Waterfall concept предусматривает поэтапную разработку, где каждый последующий этап невозможен без полного окончания предыдущего. Возврат к прошлым этапам в этом паттерне не рассматривается. Agile concept 
+## Содержание
 
-Scrum: roles and responsibilities, artifacts (scrum board, cards, epics, stories, tasks, backlogs, sprint, etc), estimation (velocity, story points, sprint burn-down chart, feature burn-up chart), ceremonies (release planning, sprint planning, daily scrum, sprint demo, sprint retrospective)
-	* 
+- [Process planning](./EngineeringManagement.md#process-planning)
+- [Engineering Process Planning](./EngineeringManagement.md#engineering-process-planning)
 
-Kanban; Scrum vs Kanban
-	* Скрам представляет собой 2-3х недельные спринты, в них как правило не меняются приоритеты, когда Kanban более гибок. В случае Скрама, задачи создаются между спринтами, в Канбаже же задачи могут появиться в процессе.
-	Начало разработки можно «покрыть» на скрам, долгосрочная 	поддержка же может потребовать более гибких правок, с этим может помочь Канбан.
 
-Software development methodologies: lean software development, extreme programming
-	* Lean – это прежде всего не про технологии и инструменты, а про изменение бизнес-процессов и человеческого мышления.
+## <a id="process-planning"></a> Process planning
 
-Distributed teams coordination and collaboration
-	-
-
-Test-driven development
-	-
-
-Feature-driven development
-	-
-
+## <a id="engineering-process-planning"></a> Engineering Process Planning
