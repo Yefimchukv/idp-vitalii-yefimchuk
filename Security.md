@@ -11,6 +11,62 @@
 
 ## <a id="app-security"></a> App Security
 
+- Qualified:
+1. Understands the difference between HTTP and HTTPS protocols
+* HTTP - протокол передачи данных по инету. HTTPS - улучшеная версия, в которой данные передаются зашифроваными каналами. Происходит при хендшейке сторон. В свифте для работы с не зашифрованым протоколом нужно ставить отдельную галочку в .plist приложения.
+3. Understands Access Levels (private/public/…)
+* Open and public - Сущности доступны вне рамок декларирования, так и открыты в рамках другого модуля.
+* Internal - по умолчанию. Сущности доступны вне рамок декларирования, однако скрыты в рамках другого модуля.
+* File-private - ограничивает область видимости сущности в рамках файла-источника. Нужен для того, чтобы спрятать специфичные детали или функционал в рамках единого файла.
+* Private - ограничивает область сущности в рамках ее декларейшена. Также ограничивает расширения в рамках файла.
+::/Открытый доступ - это самый высокий (наименее ограничивающий) уровень доступа, а закрытый доступ - самый низкий (наиболее ограничивающий) уровень доступа./::
+5. Knows how to enable/disable TLS
+::/ ??????? /:: 
+7. Knows basic HTTP codes (groups + some code examples)
+* 100 - Информационные
+    * 100 Continue - Продолжить
+    * 101 Switching Protocols - Переключение протоколов
+    * 102 Processing - Идет обработка
+* 200 - Успешные
+    * 200 - ОК. Самый стандартный успешный ответ HTTP запроса
+    * 201 - Created. Запрос был использован и в результате был создан новый ресурс
+    * 202 - Accepted - Запрос был принят в обработку, но обработка не была завершена
+    * 203 - Non-Authoritative Information - Сервер успешно обработал запрос, но информация в ответе может быть с другого источника
+    * 204 - No Content - Сервер успешно обработал запрос, но не вернул содержимое. Может использоваться в случае обычного запроса удаления
+    * 205 - Reset Content - Повтор отправки содержимого
+    * 206 - Partial Content - сервер удачно выполнил  частичный GET-запрос, возвратив только часть сообщения.
+    * 207 - Multi-Status - сервер передаёт результаты выполнения сразу нескольких независимых операций.
+    * 208 - Already Reported - члены привязки DAV уже были перечислены в предыдущей части (multistatus) ответа и не включаются снова.
+    * 226 - IM Used - заголовок A-IM от клиента был успешно принят и сервер возвращает содержимое с учётом указанных параметров.
+* 300 - Перенаправление. Коды этого класса сообщают клиенту, что для успешного выполнения операции необходимо сделать другой запрос, как правило, по другому URI. Из данного класса пять кодов 301, 302, 303, 305 и 307 относятся непосредственно к перенаправлениям.
+* 400 - Класс кодов 4xx предназначен для указания ошибок со стороны клиента.
+* 500 - Коды 5xx выделены под случаи необработанных исключений при выполнении операций на стороне сервера.
+
+- Competent:
+1. Knows how to pin SSL certificate
+    * Можно сделать с помощью URLSession, AlamoFire, AFNetworking
+    * ::/ ???? /::
+3. Jailbreak detection
+    * Можно попробовать определить наличие джейлбрейк приложения `Cydia` или попробовать обратиться к приватному апи
+5. Knows how to use TouchID and FaceID (what is granted by the OS if the user successfully passes TouchID/FaceID check and how to use this information?)
+    * Система дает возможность использовать TouchID и FaceID с помощью `LocalAuthentication`. При работе мы обрабатываем созданый `let context = LAContext()` , запрашиваем доступ и проводи авторизацию. При успешном входе мы получаем с замыкания `(success, error)`
+
 ## <a id="data-security"></a> Data Security
 
+- Qualified:
+1. Knows what user’s data is sensitive
+2. Knows what is application sandbox (file system)
+
+- Competent:
+1. Knows where the application should store sensitive data
+2. Understands how symmetric/asymmetric encryptions work (general description + what kind of safety they provide)
+
+- Expert:
+1.  DB encryption/decryption for popular DB solutions
+2. Knows what is Data Protection and how it works
+
 ## <a id="company-security"></a> Company Security
+
+- Qualified:
+1. Separates private & work accounts and chats
+2. Knows what NDA means
