@@ -10,19 +10,19 @@
 
 ## <a id="unit-test"></a> Unit Test
 
-## - Qualified: 
+## Qualified: 
 ### 1. Knows what is unit test
     * ?
 ### 2. Knows how to add tests to the project
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows FIRST principles
     * ?
 ### 2. Knows the purpose and benefits of TDD
     * ?
 
-## - Expert:
+## Expert:
 ### 1. Mocked/stubbed object usage - why and how
     * ?
 ### 2. Can develop a project using TDD
@@ -30,13 +30,13 @@
 
 ## <a id="tools"></a> Tools
 
-## - Qualified:
+## Qualified:
 ### 1. Knows how to simulate network conditions on simulator and device
     * ?
 ### 2. Knows how to debug network activity of simulator and device
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows how to simulate the location of simulator and device
     * ?
 ### 2. Knows how to send remote notifications on the device (scripts/services)

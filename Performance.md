@@ -10,7 +10,7 @@
 
 ## <a id="ui-perfomance)"></a> UI Perfomance
 
-## - Qualified:
+## Qualified:
 ### 1. Understands how to build a layout with and without auto layout
     * ?
 ### 2. Knows what is «reusing» and what can be reused in UIKit
@@ -20,7 +20,7 @@
 ### 4. Knows how to solve layout issues (ambiguous and unsatisfiable layouts)
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows what logical operations may block UI and how to avoid them (heavyweight objects creation like Formatters, data loading, …)
     * ?
 ### 2. Understands Auto layout cycle steps (update, layout and render steps) and corresponding UIView callbacks, how to avoid infinite layout cycle loop (not to ### trigger previous layout phase)
@@ -36,7 +36,7 @@
 
 ## <a id="app-perfomance)"></a> App Perfomance
 
-## - Qualified:
+## Qualified:
 ### 1. Knows concurrency basics (GCD queues, async/sync, groups)
     * ?
 ### 2. Knows how memory management works (ARC, reference counter)
@@ -46,7 +46,7 @@
 ### 4. Knows about potential memory problems in closures and how to avoid them (context capturing, retain cycles)
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows how to react to memory pressure (memory warnings)
     * ?
 ### 2. Big data uploading - problems, solutions (mostly about memory management)
@@ -68,13 +68,13 @@
 
 ## <a id="core-language"></a> Core (language)
 
-## - Qualified:
+## Qualified:
 ### 1. Uses appropriate data structures (arrays, sets, dictionaries - purpose, differences)
     * ?
 ### 2. Understands difference between value & reference types
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Understands what is Copy-on-write optimization
     * ?
     

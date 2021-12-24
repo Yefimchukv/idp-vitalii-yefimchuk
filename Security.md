@@ -46,7 +46,7 @@ Private - ограничивает область сущности в рамка
 400 - Класс кодов 4xx предназначен для указания ошибок со стороны клиента.
 500 - Коды 5xx выделены под случаи необработанных исключений при выполнении операций на стороне сервера.
 
-## - Competent:
+## Competent:
 ### 1. Knows how to pin SSL certificate
 Можно сделать с помощью URLSession, AlamoFire, AFNetworking
     * ?
@@ -63,13 +63,13 @@ Private - ограничивает область сущности в рамка
 ### 2. Knows what is application sandbox (file system)
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows where the application should store sensitive data
     * ?
 ### 2. Understands how symmetric/asymmetric encryptions work (general description + what kind of safety they provide)
     * ?
 
-## - Expert:
+## Expert:
 ### 1. DB encryption/decryption for popular DB solutions
     * ?
 ### 2. Knows what is Data Protection and how it works
@@ -77,7 +77,7 @@ Private - ограничивает область сущности в рамка
 
 ## <a id="company-security"></a> Company Security
 
-## - Qualified:
+## Qualified:
 ### 1. Separates private & work accounts and chats
     * ?
 ### 2. Knows what NDA means

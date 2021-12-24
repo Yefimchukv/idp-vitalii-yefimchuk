@@ -15,13 +15,13 @@
 
 ## <a id="user-notifications"></a> User Notifications
 
-## - Qualified:
+## Qualified:
 ### 1. Knows how and when to subscribe/unsubscribe for notifications
     * ?
 ### 2. Knows remote notification payload and purpose of each parameter
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Completely understands how remote notifications flow works from front-end and back-end perspective
     * ?
 ### 2. Knows how to manage app badge value
@@ -31,7 +31,7 @@
 ### 4. Knows what is silent remote notification and its purpose
     * ?
 
-## - Expert:
+## Expert:
 ### 1. Has experience in PushKit. VoIP notifications specifics
     * ?
 ### 2. Knows how to pre-process remote notification payload before app receives it
@@ -41,13 +41,13 @@
 
 ## <a id="location-and-map"></a> Location and Map
 
-## - Qualified:
+## Qualified:
 ### 1. Knows how to determine the current location
     * ?
 ### 2. Knows modes of CLLocationManager
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows how to implement geocoding, reverse geocoding
     * ?
 ### 2. Knows how to implement geofencing
@@ -57,31 +57,31 @@
 ### 4. Knows what types of accuracy exist and when to use each of them
     * ?
 
-## - Expert:
+## Expert:
 ### 1. Can imagine and discuss how to denoise locations, how to detect and filter invalid locations
     * ?
 
 ## <a id="application-lifecycle"></a> Application Lifecycle
 
-## - Qualified:
+## Qualified:
 ### 1. Knows about app states and transitions between them
     * ?
 ### 2. Can name most of the methods from AppDelegate and their purposes
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows how to perform some logic blocks in the background
     * ?
 ### 2. Knows what background modes iOS app support and how to configure them
     * ?
 
-## - Expert:
+## Expert:
 ### 1. Know how to implement application state restoration
     * ?
 
 ## <a id="animations"></a> Animations
 
-## - Qualified:
+## Qualified:
 ### 1.  Knows what is CALayer, its subclasses
     * ?
 ### 2. Basic UIView animations
@@ -91,7 +91,7 @@
 ### 4. Knows how to animate layer properties
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows differences between Model, Presentation and Render trees (layers)
     * ?
 ### 2. Understands time-related parameters of animations (beginTime, timeOffset, duration, speed)
@@ -103,7 +103,7 @@
 ### 5. Knows how to perform custom animated screen transitions
     * ?
 
-## - Expert:
+## Expert:
 ### 1. Creates easily configured and reused in different cases animation components
     * ?
 ### 2. Knows how to optimize animation performance.
@@ -113,7 +113,7 @@
 
 ## <a id="apple-developer-portal"></a> Apple Developer Portal
 
-## - Qualified:
+## Qualified:
 ### 1. Knows what are certificates and provision profiles
     * ?
 ### 2. Knows what to do if there is a task to add new device
@@ -123,7 +123,7 @@
 ### 4. Knows how to create a new app
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows how to generate all required keys, certificates and profiles, including ones for remote notifications
     * ?
 ### 2. Knows about internal/external testing on TestFlight, limitations and features
@@ -131,7 +131,7 @@
 ### 3. Knows how to properly export certificates and profiles from Keychain
     * ?
 
-## - Expert:
+## Expert:
 ### 1. Knows what limitations have standard Apple Developer Program (number of devices, distribution certs, ways of apps distribution for in-house testing)
     * ?
 ### 2. Knows what Apple Developer Enterprise Program is and what benefits it has (compared with standard Developer Program)
@@ -139,7 +139,7 @@
 
 ## <a id="core-data-realm"></a> Core Data/Realm
 
-## - Qualified:
+## Qualified:
 ### 1. Knows how to setup data storage using Core Data or Realm
     * ?
 ### 2. CRUD operations. Data observing
@@ -149,7 +149,7 @@
 ### 4. Knows storage types for Core Data
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows how to perform lightweight and custom migrations
     * ?
 ### 2. Concurrency in Core Data and Realm - bottlenecks, solutions (thread-safety, saving/merging/refreshing)
@@ -157,13 +157,13 @@
 ### 3. Can explain the concept of lazy fetching in both solutions
     * ?
 
-## - Expert:
+## Expert:
 ### 1. Knows features and limitations of Core Data and Realm in comparison (encryption, inheritance, grouping, fetch optimizations, …)
     * ?
 
 ## <a id="release-success-indicators"></a> RxSwift
 
-## - Qualified:
+## Qualified:
 ### 1. Understands concept of subscriptions
     * ?
 ### 2. Knows what is disposeBag and why you need it
@@ -173,7 +173,7 @@
 ### 4. UI binding
     * ?
 
-## - Competent:
+## Competent:
 ### 1. Knows lot of RX operators
     * ?
 ### 2. Knows about Traits (Driver, Relays, Single,…), their differences and usecases to use them
@@ -183,6 +183,6 @@
 ### 4. Uses operators chaining without side effects and outside context capturing (functional way of programming)
     * ?
 
-## - Expert:
+## Expert:
 ### 1. Knows how to write Reactive extensions\
     * ?
