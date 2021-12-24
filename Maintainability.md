@@ -12,7 +12,7 @@
 
 ## <a id="architecture"></a> Architecture
 
-## - Qualified:
+## `Qualified`:
 ### 1. Knows and understands SOLID principles
     * ?
 ### 2. KISS, DRY, …
@@ -22,7 +22,7 @@
 ### 4. Knows what is protocol-oriented programming
     * ?
 
-## - Competent:
+## `Competent`:
 ### 1. Keeps responsibilities according to selected architecture
     * ?
 ### 2. Knows and can explain Dependency Injection, Inversion of Control
@@ -32,37 +32,37 @@
 ### 4. Knows how to share codebase and data with app extensions/tvOS/watchOS apps
     * ?
 
-## - Expert:
+## `Expert`:
 ### 1. Makes appropriate architecture decisions according to the situation on a lower quality in non-critical app parts, advised technical debt - if time&budget requires it
     * ?
     
 ## <a id="code-style"></a> Code Style
  
-## - Qualified:
+## `Qualified`:
 ### 1. Uses iOS team Swift guidelines (checked via SwiftLint)
     * ?
 
-## - Competent:
+## `Competent`:
 ### 1. Minimizes SwiftLint rules disabling
     * ?
  
 ## <a id="documentation"></a> Documentation
  
-## - Qualified:
+## `Qualified`:
 ### 1. Understands why does the project need documentation and comments
     * ?
  
-## - Competent:
+## `Competent`:
 ### 1. Important and non-obvious places in code are covered with comments
     * ?
  
-## - Expert:
+## `Expert`:
 ### 1. readme.md file contains the definition of app architecture, all dependencies, and most important app services
     * ?
  
 ## <a id="release-success-indicators"></a> Release success indicators
  
-## - Qualified:
+## `Qualified`:
 ### 1. Knows some basics from HIG, can explain some topics
     * ?
 ### 2. Knows one-two term from Apple Review Guidelines
@@ -70,7 +70,7 @@
 ### 3. Knows how to localize the application
     * ?
  
-## - Competent:
+## `Competent`:
 ### 1. Knows most of Apple Review Guidelines
     * ?
 ### 2. Knows how to deal with DB changes in production apps
