@@ -23,12 +23,12 @@
     - [Documentation](./Maintainability.md#documentation)
     - [Release success indicators](./Maintainability.md#release-success-indicators)
 
-### Perfomance
+### Performance
 
-- [Perfomance](./Perfomance.md)
-    - [UI Perfomance](./Perfomance.md#ui-perfomance)
-    - [App Perfomance](./Perfomance.md#app-perfomance)
-    - [Core (language)](./Perfomance.md#core-language)
+- [Performance](./Performance.md)
+    - [UI Performance](./Performance.md#ui-Performance)
+    - [App Performance](./Performance.md#app-Performance)
+    - [Core (language)](./Performance.md#core-language)
 
 ### Testability
 
