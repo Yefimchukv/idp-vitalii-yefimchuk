@@ -11,18 +11,18 @@
 
 ## <a id="app-security"></a> App Security
 
-- Qualified:
-1. Understands the difference between HTTP and HTTPS protocols
+## - Qualified:
+### 1. Understands the difference between HTTP and HTTPS protocols
 * HTTP - протокол передачи данных по инету. HTTPS - улучшеная версия, в которой данные передаются зашифроваными каналами. Происходит при хендшейке сторон. В свифте для работы с не зашифрованым протоколом нужно ставить отдельную галочку в .plist приложения.
-3. Understands Access Levels (private/public/…)
+### 3. Understands Access Levels (private/public/…)
 * Open and public - Сущности доступны вне рамок декларирования, так и открыты в рамках другого модуля.
 * Internal - по умолчанию. Сущности доступны вне рамок декларирования, однако скрыты в рамках другого модуля.
 * File-private - ограничивает область видимости сущности в рамках файла-источника. Нужен для того, чтобы спрятать специфичные детали или функционал в рамках единого файла.
 * Private - ограничивает область сущности в рамках ее декларейшена. Также ограничивает расширения в рамках файла.
 ::/Открытый доступ - это самый высокий (наименее ограничивающий) уровень доступа, а закрытый доступ - самый низкий (наиболее ограничивающий) уровень доступа./::
-5. Knows how to enable/disable TLS
+### 4. Knows how to enable/disable TLS
 ::/ ??????? /:: 
-7. Knows basic HTTP codes (groups + some code examples)
+### 5. Knows basic HTTP codes (groups + some code examples)
 * 100 - Информационные
     * 100 Continue - Продолжить
     * 101 Switching Protocols - Переключение протоколов
@@ -42,31 +42,39 @@
 * 400 - Класс кодов 4xx предназначен для указания ошибок со стороны клиента.
 * 500 - Коды 5xx выделены под случаи необработанных исключений при выполнении операций на стороне сервера.
 
-- Competent:
-1. Knows how to pin SSL certificate
+## - Competent:
+### 1. Knows how to pin SSL certificate
     * Можно сделать с помощью URLSession, AlamoFire, AFNetworking
-    * ::/ ???? /::
-3. Jailbreak detection
+    * ?
+### 2. Jailbreak detection
     * Можно попробовать определить наличие джейлбрейк приложения `Cydia` или попробовать обратиться к приватному апи
-5. Knows how to use TouchID and FaceID (what is granted by the OS if the user successfully passes TouchID/FaceID check and how to use this information?)
+### 3. Knows how to use TouchID and FaceID (what is granted by the OS if the user successfully passes TouchID/FaceID check and how to use this information?)
     * Система дает возможность использовать TouchID и FaceID с помощью `LocalAuthentication`. При работе мы обрабатываем созданый `let context = LAContext()` , запрашиваем доступ и проводи авторизацию. При успешном входе мы получаем с замыкания `(success, error)`
 
 ## <a id="data-security"></a> Data Security
 
-- Qualified:
-1. Knows what user’s data is sensitive
-2. Knows what is application sandbox (file system)
+## - Qualified:
+### 1. Knows what user’s data is sensitive
+    * ?
+### 2. Knows what is application sandbox (file system)
+    * ?
 
-- Competent:
-1. Knows where the application should store sensitive data
-2. Understands how symmetric/asymmetric encryptions work (general description + what kind of safety they provide)
+## - Competent:
+### 1. Knows where the application should store sensitive data
+    * ?
+### 2. Understands how symmetric/asymmetric encryptions work (general description + what kind of safety they provide)
+    * ?
 
-- Expert:
-1.  DB encryption/decryption for popular DB solutions
-2. Knows what is Data Protection and how it works
+## - Expert:
+### 1. DB encryption/decryption for popular DB solutions
+    * ?
+### 2. Knows what is Data Protection and how it works
+    * ?
 
 ## <a id="company-security"></a> Company Security
 
-- Qualified:
-1. Separates private & work accounts and chats
-2. Knows what NDA means
+## - Qualified:
+### 1. Separates private & work accounts and chats
+    * ?
+### 2. Knows what NDA means
+    * ?
