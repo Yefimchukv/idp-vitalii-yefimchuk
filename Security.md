@@ -11,7 +11,7 @@
 
 ## <a id="app-security"></a> App Security
 
-## - Qualified:
+## Qualified:
 ### 1. Understands the difference between HTTP and HTTPS protocols
 
 HTTP - протокол передачи данных по инету. HTTPS - улучшеная версия, в которой данные передаются зашифроваными каналами. Происходит при хендшейке сторон. В свифте для работы с не зашифрованым протоколом нужно ставить отдельную галочку в .plist приложения.
@@ -59,7 +59,7 @@ Private - ограничивает область сущности в рамка
 
 ## <a id="data-security"></a> Data Security
 
-## - Qualified:
+## Qualified:
 ### 1. Knows what user’s data is sensitive
 Из [доков](https://developer.apple.com/app-store/app-privacy-details/#:~:text=Approximate%20Location%20Services-,Sensitive%20Info,-Sensitive%20Info), такой информацией могут быть расовые или этнические данные, сексуальная ориентация, информация о беременности или родах, инвалидность, религиозные или философские убеждения, членство в профсоюзе, политические взгляды, генетическая информация или биометрические данные.
 
