@@ -50,8 +50,10 @@ Private - ограничивает область сущности в рамка
 ### 1. Knows how to pin SSL certificate
 Можно сделать с помощью URLSession, AlamoFire, AFNetworking
     * ?
+    
 ### 2. Jailbreak detection
 Можно попробовать определить наличие джейлбрейк приложения `Cydia` или попробовать обратиться к приватному апи
+
 ### 3. Knows how to use TouchID and FaceID (what is granted by the OS if the user successfully passes TouchID/FaceID check and how to use this information?)
 Система дает возможность использовать TouchID и FaceID с помощью `LocalAuthentication`. При работе мы обрабатываем созданый `let context = LAContext()` , запрашиваем доступ и проводи авторизацию. При успешном входе мы получаем с замыкания `(success, error)`
 
@@ -59,19 +61,23 @@ Private - ограничивает область сущности в рамка
 
 ## - Qualified:
 ### 1. Knows what user’s data is sensitive
-    * ?
+Из [доков](https://developer.apple.com/app-store/app-privacy-details/#:~:text=Approximate%20Location%20Services-,Sensitive%20Info,-Sensitive%20Info), такой информацией могут быть расовые или этнические данные, сексуальная ориентация, информация о беременности или родах, инвалидность, религиозные или философские убеждения, членство в профсоюзе, политические взгляды, генетическая информация или биометрические данные.
+
 ### 2. Knows what is application sandbox (file system)
-    * ?
+Сендбокс ограничивает возможности приложения программы в рамках ее "песочницы", не дает ей вмешиваться в функционал другой
 
 ## Competent:
 ### 1. Knows where the application should store sensitive data
-    * ?
+В Keychain
+> чисто в теории можно попробовать хранить в Realm ибо он предусматривает шифрование, однако это скорее нежелательно
+
 ### 2. Understands how symmetric/asymmetric encryptions work (general description + what kind of safety they provide)
-    * ?
+Симетричное (DES, AES, RC4, etc) шифрование предусматривает 1 ключ, асиметричное (RSA, ECC, Диффи Хельмана) - 2 (публичный и приватный). 
 
 ## Expert:
 ### 1. DB encryption/decryption for popular DB solutions
-    * ?
+Realm, в отличии от Core Data, имеет функионал шифрования данных, однако даже в текстовый файл можно сохранить данные безопасно. В таких случаях данные должны быть сильно искажены. Их надежность будет определять криптостойкость выбраных криптоалгоритмов
+
 ### 2. Knows what is Data Protection and how it works
     * ?
 
@@ -79,6 +85,7 @@ Private - ограничивает область сущности в рамка
 
 ## Qualified:
 ### 1. Separates private & work accounts and chats
-    * ?
+Разграничиваю аккаунты и чаты в соответствии с правилами
+
 ### 2. Knows what NDA means
-    * ?
+NDA - соглашение о неразглашении. Регулирует конфиденсальную информацию, правила их неразглашения, штрафы за несоблюдения и прочее.
