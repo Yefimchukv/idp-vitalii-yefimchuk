@@ -38,11 +38,17 @@
 
 ## Qualified:
 ### 1. Knows concurrency basics (GCD queues, async/sync, groups)
-    * ?
+// GROUP
+GDC - Grand Central Dispatch, основной метод управления многозадачностью в iOS. 
+Имеет main(всегда Serial, `критически важен для обновления UI`) и global(QOS, всегда Concurrent).
+Quality of Service делится на: default, userInteractive, userInitiated, utility, background.
+При работе с очередями мы можем отправлять запросы на выполнение синхронно или асинхронно. Синхронные очереди добавляют задачи в конец очереди и ожидают их выполение. В асинхронных очередях не происходит ожидание выполнения.
 ### 2. Knows how memory management works (ARC, reference counter)
-    * ?
+ARC - автоматический счетчик ссылок. Удерживает в памяти ссылаемые обьекты и удаляет их в случае "высвобождения". Сильные ссылки повышают/понижают ARC, weak/unowned - нет. Unowned не должен быть nil
 ### 3. Knows what retain cycle is and how to avoid it
-    * ?
+// retain cycle with nonescaping cosures
+// retain cycle with delegates
+Reatin cycle это ситуация, когда ARC не высвободил необхдимые обьекты. Можно избежать привязыванием обьектов слабыми ссылками, также важно помнить о weak/unowned self внутри замыкания.
 ### 4. Knows about potential memory problems in closures and how to avoid them (context capturing, retain cycles)
     * ?
 
@@ -70,7 +76,7 @@
 
 ## Qualified:
 ### 1. Uses appropriate data structures (arrays, sets, dictionaries - purpose, differences)
-    * ?
+    //read difference
 ### 2. Understands difference between value & reference types
     * ?
 

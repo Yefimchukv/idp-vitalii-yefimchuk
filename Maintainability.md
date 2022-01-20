@@ -14,13 +14,54 @@
 
 ## Qualified:
 ### 1. Knows and understands SOLID principles
-    * ?
+S: Single Responsibility Principle (Принцип единственной ответственности).
+O: Open-Closed Principle (Принцип открытости-закрытости).
+L: Liskov Substitution Principle (Принцип подстановки Барбары Лисков).
+I: Interface Segregation Principle (Принцип разделения интерфейса).
+D: Dependency Inversion Principle (Принцип инверсии зависимостей).
+
 ### 2. KISS, DRY, …
-    * ?
+KISS говорит не усложнять интерфейс на столько, на сколько это допустимо
+DRY продвигает идею неповторяющегося кода, в случае повторений, код следует вывести в функцию и обращаться к ней
+YAGNI похож на KISS, говорит о том, что не нужно добавлять вещи, которые не понадобятся
+
 ### 3. Understand the concept of Optionals, knows when to use all kinds
-    * ?
+Optional - enum который содержит nil, или же необходимое значение. Опциональность проверяется на этапе компиляции, что снижает количество ошибок в runtime. Опциональную переменную в Swift нельзя использовать точно так же, как неопциональную. Нужно либо принудительно преобразовывать к обычному значению, либо использовать специальные преобразующие идиомы, такие как if let, guard let и ??.
+    
 ### 4. Knows what is protocol-oriented programming
-    * ?
+Паттерн, ориентирующийся на протоколы, а конкретно: `protocol` `extension` `constraint`
+Протокол описывает интерфейс и проверяет наличие этого интерфейса при написании компонентов программы с этим протоколом.
+Расширения добавляет функционал к существующему типу или протоколу. 
+
+```swift
+protocol Ordered {
+    func precedes(other: Self) -> Bool
+}
+
+extension Comparable {
+// Если нежелательно, чтобы метод расширения был доступен для всех Comparable, можно добавить ограничение:
+// extension Ordered where Self: Comparable
+// либо 
+// extension Comparable where Self: Ordered
+    func precedes(other: Self) -> Bool { return self < other }
+}
+
+extension Int : Ordered {}
+extension String : Ordered {}
+```
+
+Констрейнты (ограничения на тип) позволяют: соответствовать протоколу наследоваться от класса или иметь тип
+
+```swift
+func produce<F: Factory>(factory: F) where F.Product == Cola
+```
+
+```swift
+func fly<T>(f: T) where T: Flying, T: Animal { ... } 
+func fly<T: Flying & Animal>(f: T) { ... }
+func fly<T: Animal>(f: T) where T: Flying { ... }
+func fly<T>(f: T) where T: Flying & Animal { ... }
+```
 
 ## Competent:
 ### 1. Keeps responsibilities according to selected architecture
@@ -50,11 +91,11 @@
  
 ## Qualified:
 ### 1. Understands why does the project need documentation and comments
-    * ?
+Документация и комментарии помогают при работе с командой, упрощают понимание кода
  
 ## Competent:
 ### 1. Important and non-obvious places in code are covered with comments
-    * ?
+Уникальные части кода, с которыми, возможно, мало приходилось работать остальным, при обьявлении протоколов
  
 ## Expert:
 ### 1. readme.md file contains the definition of app architecture, all dependencies, and most important app services
